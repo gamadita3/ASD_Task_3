@@ -18,9 +18,10 @@ address alokasi(infotype x) {
 
     address P;
     //-------------your code here-------------
-    // NIM : 
-
-
+    // NIM : 1301154309
+    address P = new elmlist;
+    info(P) = x;
+    next(P) = NULL;
     //----------------------------------------
     return P;
 }
@@ -30,9 +31,8 @@ void dealokasi(address &P) {
     * FS : menghapus elemen yang ditunjuk oleh P (delete)
     */
     //-------------your code here-------------
-    // NIM : 
-
-	
+    // NIM :1301154309
+    delete (p);	
     //----------------------------------------
 }
 
