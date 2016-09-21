@@ -54,8 +54,18 @@ void insertLast(List &L, address P) {
     * FS : elemen yang ditunjuk P menjadi elemen terakhir pada List L
     */
     //-------------your code here-------------
-    // NIM : 
-    
+    // NIM : 1301154477
+    address Q;
+    if(L.first == NULL){
+        L.first=P;
+    }
+    else {
+        Q=L.first;
+        while(Q->next!= NULL){
+            Q=Q->next;
+        }
+        Q->next =P;
+    }
 	
     //----------------------------------------
 }
@@ -95,9 +105,21 @@ void deleteLast(List &L, address &P) {
     * FS : elemen tarakhir di dalam List L dilepas dan disimpan/ditunjuk oleh P
     */
     //-------------your code here-------------
-    // NIM : 
+    // NIM : 1301154477
 
-	
+	if(L.first != NULL){
+        P = L.first;
+        if(next(P) == NULL){
+            L.first = NULL;
+        }
+        else {
+            address Q = L.first;
+            while((Q->next)->next != NULL)
+                Q=Q->next;
+            P = Q->next;
+            Q->next = NULL;
+        }
+    }
 
     //----------------------------------------
 }
