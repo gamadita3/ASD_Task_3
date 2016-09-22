@@ -35,7 +35,7 @@ void mainMenu(){
     */
     //-------------your code here-------------
 
-    int pilih,pilih2;
+     int pilih,pilih2;
     cout <<"Main Menu"<<endl;
     cout <<"1. Insert First"<<endl;
     cout <<"2. Insert After"<<endl;
@@ -49,6 +49,7 @@ void mainMenu(){
     cout <<"Pilih : ";
     cin >> pilih;
     if(pilih == 1)
+    
     {
         cout << "Masukan data karyawan baru anda: ";
         cout << " Masukkan ID anda: ";cin >> x.id;
