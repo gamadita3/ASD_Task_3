@@ -42,13 +42,7 @@ void insertFirst(List &L, address P) {
     * FS : elemen yang ditunjuk P menjadi elemen pertama pada List L
     */
     //-------------your code here-------------
-    // NIM : 1301154175	
-    	if (first(L)) == Nil) {
-    	    first(L)) = P;
-    	} else {
-    	  next(P) = First (L);
-    	  first(L) = P;
-    	}
+    // NIM : 
 	
 
     //----------------------------------------
