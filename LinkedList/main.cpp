@@ -143,5 +143,12 @@ void mainMenu(){
             mainMenu();
         }
     }
+    else if (pilih == 7)
+    {
+        printInfo(L);
+        cout<<endl;
+        mainMenu();
+
+    }
     //----------------------------------------
 }
