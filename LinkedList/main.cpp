@@ -35,7 +35,7 @@ void mainMenu(){
     */
     //-------------your code here-------------
 
-    int pilih,pilih2;
+   int pilih,pilih2;
     cout <<"Main Menu"<<endl;
     cout <<"1. Insert First"<<endl;
     cout <<"2. Insert After"<<endl;
@@ -50,7 +50,7 @@ void mainMenu(){
     cin >> pilih;
     if(pilih == 1)
     {
-        cout << "Masukan data karyawan baru anda: ";
+        cout << "Masukan data karyawan baru anda: "<<endl;
         cout << " Masukkan ID anda: ";cin >> x.id;
         cout << " Masukkan Nama anda: ";cin>>x.nama;
         cout << " Masukkan Alamat anda: ";cin>>x.alamat;
@@ -65,10 +65,10 @@ void mainMenu(){
     }
     else if (pilih == 2)
     {
-        cout << "Masukan data sebelum data baru yang akan disisipkan : ";
+        cout << "Masukan data sebelum data baru yang akan disisipkan : "<<endl;
         cout << " Masukkan ID anda: ";cin >> x.id;
         P1 = findElm(L,x);
-        cout << " Masukkan data karyawan baru anda"
+        cout << " Masukkan data karyawan baru anda";
         cout << " Masukkan Nama anda: ";cin>>x.nama;
         cout << " Masukkan Alamat anda: ";cin>>x.alamat;
         cout << " Masukkan No.HP anda: ";cin>>x.no_hp;
@@ -83,7 +83,7 @@ void mainMenu(){
     }
     else if (pilih == 3)
     {
-        cout << "Masukan Data Terakhir anda Anda: ";
+        cout << "Masukan Data Terakhir anda Anda: "<<endl;
         cout << " Masukkan ID anda: ";cin >> x.id;
         cout << " Masukkan Nama anda: ";cin>>x.nama;
         cout << " Masukkan Alamat anda: ";cin>>x.alamat;
@@ -99,7 +99,7 @@ void mainMenu(){
     }
     else if (pilih == 4)
     {
-        cout << "Apa anda yakin ingin menghapus data pertama (yes/no = 1/2): ";
+        cout << "Apa anda yakin ingin menghapus data pertama (yes/no = 1/2): "<<endl;
         cout << "Pilih : ";cin>>pilih2;
         if (pilih2 == 1){
             deleteFirst(L,P1);
@@ -107,34 +107,34 @@ void mainMenu(){
             cout << endl;
         }
         else{
-            mainMenu()
+            mainMenu();
         }
         cout << "Data terakhir anda berhasil ditambahkan"<<endl;
         cout << endl;
         mainMenu();
     }
     else if (pilih == 5)
-    {   cout <<"Apa anda yakin ingin mengahapus data anda (yes/no = 1/2) : "
+    {   cout <<"Apa anda yakin ingin mengahapus data anda (yes/no = 1/2) : "<<endl;
         cout <<"pilih : ";cin>>pilih2;
-        if(pilih 2 == 1){
-            cout << "Masukan ID karyawan pada list sebelumnya: ";
+        if(pilih2 == 1){
+            cout << "Masukan ID karyawan pada list sebelumnya: "<<endl;
             cout << "ID karyawan : ";cin>>x.id;
             P1 = findElm(L,x);
-            insertLast(P1, P2);
+            insertAfter(P1, P2);
             cout << "Data terakhir anda berhasil dihapus"<<endl;
             cout << endl;
             mainMenu();
         }
         else {
-            mainMenu()
+            mainMenu();
         }
     }
     else if (pilih == 6)
     {
-        cout <<"Apa anda yakin ingin mengahapus data anda (yes/no = 1/2) : "
+        cout <<"Apa anda yakin ingin mengahapus data anda (yes/no = 1/2) : "<<endl;
         cout <<"pilih : ";cin>>pilih2;
-        if(pilih 2 == 1){
-            deleteLast(L,P1)
+        if(pilih2 == 1){
+            deleteLast(L,P1);
             cout << "Data terakhir anda berhasil dihapus"<<endl;
             cout << endl;
             mainMenu();
