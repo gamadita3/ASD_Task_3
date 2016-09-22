@@ -15,7 +15,6 @@ address alokasi(infotype x) {
     * FS : mengembalikan elemen list baru dengan info = x, next elemen = Nil
     */
 
-    address P;
     //-------------your code here-------------
     // NIM : 1301154309
     address P = new elmlist;
@@ -31,7 +30,7 @@ void dealokasi(address &P) {
     */
     //-------------your code here-------------
     // NIM :1301154309
-    delete (p);	
+    delete (P);	
     //----------------------------------------
 }
 
