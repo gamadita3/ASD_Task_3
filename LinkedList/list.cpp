@@ -42,11 +42,11 @@ void insertFirst(List &L, address P) {
     */
     //-------------your code here-------------
     // NIM : 1301154175
-    	if (first(L)) == NULL){
-            first(L) = P;
+    	if (L.first == NULL){
+            L.first = P;
     	} else {
-    		next(P) = first (L);
-    		fisrt(L) = P;
+    		next(P) = L.first;
+    		L.first = P;
     	}
 	
 
@@ -86,17 +86,17 @@ address findElm(List L, infotype x) {
     //-------------your code here-------------
     // NIM : 1301154225
   if(L.first !=NULL){
-        P = L.first;
-        while ((info(P).id != x)&& (next(P)!=NULL)){
+        P=L.first;
+        while ((info(P).id != x.id)&& (next(P)!=NULL)){
             P = next(P);
-            if(info(P).id== x){
-                return P;
-            }
-            else{
-                return NULL;
-            }
         }
-    }  
+        if(info(P).id== x.id){
+            return P;
+        }
+        else{
+            return NULL;
+        }
+    }
 	
     //----------------------------------------
     return P;
@@ -154,12 +154,23 @@ void printInfo(List L) {
     */
     //-------------your code here-------------
     // NIM : 1301154175
-	address P = first(L);
-	while (P != NULL){
-		cout<<info(p)<<endl;
-		P = next (P) 
-	}
-	
+	if(L.first!=NULL){
+        address P = L.first;
+        if(next(P)== NULL){
+            cout<< info(P).id;
+        }
+        else {
+            while(P!=NULL){
+                cout<<info(P).id<<" ";
+                P=next(P);
+            }
+            cout<<endl;
+        }
+    }
+    else{
+        cout<<"Mohon maaf list anda kosong"<<endl;
+    }
+
     //----------------------------------------
 }
 
