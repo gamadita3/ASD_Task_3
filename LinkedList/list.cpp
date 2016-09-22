@@ -69,7 +69,7 @@ void insertLast(List &L, address P) {
         while(Q->next!= NULL){
             Q=Q->next;
         }
-        Q->next =P;
+        Q->next = P;
     }
 	
     //----------------------------------------
@@ -137,10 +137,11 @@ void deleteLast(List &L, address &P) {
         }
         else {
             address Q = L.first;
-            while((Q->next)->next != NULL)
+            while((Q->next)->next != NULL){
                 Q=Q->next;
-            P = Q->next;
-            Q->next = NULL;
+            }
+        P = Q->next;
+        Q->next = NULL;
         }
     }
 
