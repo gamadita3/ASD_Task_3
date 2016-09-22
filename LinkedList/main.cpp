@@ -68,7 +68,7 @@ void mainMenu(){
         cout << "Masukan data sebelum data baru yang akan disisipkan : ";
         cout << " Masukkan ID anda: ";cin >> x.id;
         P1 = findElm(L,x);
-        cout << " Masukkan data karyawan baru anda"
+        cout << " Masukkan data karyawan baru anda";
         cout << " Masukkan Nama anda: ";cin>>x.nama;
         cout << " Masukkan Alamat anda: ";cin>>x.alamat;
         cout << " Masukkan No.HP anda: ";cin>>x.no_hp;
@@ -103,38 +103,36 @@ void mainMenu(){
         cout << "Pilih : ";cin>>pilih2;
         if (pilih2 == 1){
             deleteFirst(L,P1);
-            cout << "Data terakhir anda berhasil dihapus"<<endl;
+            cout << "Data pertama anda berhasil dihapus"<<endl;
             cout << endl;
+            mainMenu();
         }
         else{
-            mainMenu()
+            mainMenu();
         }
-        cout << "Data terakhir anda berhasil ditambahkan"<<endl;
-        cout << endl;
-        mainMenu();
     }
     else if (pilih == 5)
-    {   cout <<"Apa anda yakin ingin mengahapus data anda (yes/no = 1/2) : "
+    {   cout <<"Apa anda yakin ingin mengahapus data anda (yes/no = 1/2) : ";
         cout <<"pilih : ";cin>>pilih2;
-        if(pilih 2 == 1){
+        if(pilih2 == 1){
             cout << "Masukan ID karyawan pada list sebelumnya: ";
             cout << "ID karyawan : ";cin>>x.id;
             P1 = findElm(L,x);
-            insertLast(P1, P2);
-            cout << "Data terakhir anda berhasil dihapus"<<endl;
+            deleteAfter(P1, P2);
+            cout << "Data  anda berhasil dihapus"<<endl;
             cout << endl;
             mainMenu();
         }
         else {
-            mainMenu()
+            mainMenu();
         }
     }
     else if (pilih == 6)
     {
-        cout <<"Apa anda yakin ingin mengahapus data anda (yes/no = 1/2) : "
+        cout <<"Apa anda yakin ingin mengahapus data anda (yes/no = 1/2) : ";
         cout <<"pilih : ";cin>>pilih2;
-        if(pilih 2 == 1){
-            deleteLast(L,P1)
+        if(pilih2 == 1){
+            deleteLast(L,P1);
             cout << "Data terakhir anda berhasil dihapus"<<endl;
             cout << endl;
             mainMenu();
