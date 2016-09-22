@@ -6,7 +6,7 @@ void createList(List &L) {
     */
     //-------------your code here-------------
     // NIM : 1301154175
-    first(L) = Nil;
+    first(L) = NULL;
     //----------------------------------------
 }
 
@@ -42,7 +42,7 @@ void insertFirst(List &L, address P) {
     */
     //-------------your code here-------------
     // NIM : 1301154175
-    	if (first(L)) == Nil){
+    	if (first(L)) == NULL){
             first(L) = P;
     	} else {
     		next(P) = first (L);
@@ -155,7 +155,7 @@ void printInfo(List L) {
     //-------------your code here-------------
     // NIM : 1301154175
 	address P = first(L);
-	while (P != Nil){
+	while (P != NULL){
 		cout<<info(p)<<endl;
 		P = next (P) 
 	}
