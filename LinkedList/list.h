@@ -30,8 +30,8 @@ using namespace std;
 **/
 
 
-struct [stuff]{
-	int id;
+struct stuff{
+	int kantor;
     //------------- your code here -----------
     
     	string nama;
