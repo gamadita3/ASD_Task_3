@@ -7,8 +7,6 @@ void createList(List &L) {
     //-------------your code here-------------
     // NIM : 1301154175
     first(L) = Nil;
-    	
-
     //----------------------------------------
 }
 
@@ -99,10 +97,17 @@ void deleteFirst(List &L, address &P) {
     * FS : elemen pertama di dalam List L dilepas dan disimpan/ditunjuk oleh P
     */
     //-------------your code here-------------
-    // NIM : 
-
-	
-	
+    // NIM : 1301154309
+	if(L.first !=NULL){
+        P=L.first;
+        if(P->next==NULL){
+            L.first=NULL;
+        }
+        else{
+            L.first = P->next;
+            P->next=NULL;
+        }
+    }
     //----------------------------------------
 }
 
@@ -137,7 +142,6 @@ void printInfo(List L) {
     */
     //-------------your code here-------------
     // NIM : 1301154175
-	
 	address P = first(L);
 	while (P != Nil){
 		cout<<info(p)<<endl;
