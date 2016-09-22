@@ -86,7 +86,7 @@ address findElm(List L, infotype x) {
     //-------------your code here-------------
     // NIM : 1301154225
   if(L.first !=NULL){
-        P=L.first;
+        P = L.first;
         while ((info(P).id != x)&& (next(P)!=NULL)){
             P = next(P);
             if(info(P).id== x){
