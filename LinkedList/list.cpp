@@ -5,8 +5,9 @@ void createList(List &L) {
     * FS : first(L) diset Nil
     */
     //-------------your code here-------------
-    // NIM : 
-    
+    // NIM : 1301154175
+    first(L) = Nil;
+    	
 
     //----------------------------------------
 }
@@ -42,7 +43,13 @@ void insertFirst(List &L, address P) {
     * FS : elemen yang ditunjuk P menjadi elemen pertama pada List L
     */
     //-------------your code here-------------
-    // NIM : 
+    // NIM : 1301154175
+    	if (first(L)) == Nil){
+            first(L) = P;
+    	} else {
+    		next(P) = first (L);
+    		fisrt(L) = P;
+    	}
 	
 
     //----------------------------------------
@@ -129,8 +136,13 @@ void printInfo(List L) {
     * FS : menampilkan info seluruh elemen list L
     */
     //-------------your code here-------------
-    // NIM : 
-
+    // NIM : 1301154175
+	
+	address P = first(L);
+	while (P != Nil){
+		cout<<info(p)<<endl;
+		P = next (P) 
+	}
 	
     //----------------------------------------
 }
