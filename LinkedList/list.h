@@ -31,13 +31,13 @@ using namespace std;
 
 
 struct stuff{
-	int kantor;
+	int id;
     //------------- your code here -----------
     
     	string nama;
     	string alamat;
     	char no_hp;
-    	string kantor;
+    	int kantor;
 	
     //----------------------------------------
 };
